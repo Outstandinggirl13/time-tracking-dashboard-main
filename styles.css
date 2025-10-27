@@ -115,7 +115,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(7, auto);
-    row-gap: 25px;
+    row-gap: 26px;
     margin: 81px auto;
     max-width: 326px;
 }
@@ -181,6 +181,132 @@ body {
     padding-left: 8px;
 }
 
+.work__group,
+.play__group,
+.study__group,
+.exercise__group,
+.social__group,
+.self-care__group {
+    background-color: var(--navy-900);
+    border-radius: 14px;
+    position: relative;
+    z-index: 1;
+    padding: 26px 22px 28px 27px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.work__header,
+.work__main,
+.play__header,
+.play__main,
+.study__header,
+.study__main,
+.exercise__header,
+.exercise__main,
+.social__header,
+.social__main,
+.self-care__header,
+.self-care__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.work__heading, 
+.play__heading,
+.study__heading,
+.exercise__heading,
+.social__heading,
+.self-care__heading {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.work__icon-more,
+.play__icon-more,
+.study__icon-more,
+.exercise__icon-more,
+.social__icon-more,
+.self-care__icon-more {
+    width: 21px;
+    height: 5px;
+}
+
+.work__daily-current,
+.work__weekly-current,
+.work__monthly-current
+.play__daily-current,
+.play__weekly-current,
+.play__monthly-current,
+.study__daily-current,
+.study__weekly-current,
+.study__monthly-current,
+.exercise__daily-current,
+.exercise__weekly-current,
+.exercise__monthly-current,
+.social__daily-current,
+.social__weekly-current,
+.social__monthly-current,
+.self-care__daily-current,
+.self-care__weekly-current,
+.self-care__monthly-current {
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: -0.05em;
+}
+
+.work__daily-previous,
+.work__weekly-previous,
+.work__monthly-previous,
+.play__daily-previous,
+.play__weekly-previous,
+.play__monthly-previous,
+.study__daily-previous,
+.study__weekly-previous,
+.study__monthly-previous,
+.exercise__daily-previous,
+.exercise__weekly-previous,
+.exercise__monthly-previous,
+.social__daily-previous,
+.social__weekly-previous,
+.social__monthly-previous,
+.self-care__daily-previous,
+.self-care__weekly-previous,
+.self-care__monthly-previous {
+    font-size: 16px;
+    color: var(--navy-200);
+    letter-spacing: -0.03em;
+}
+
+.work__daily-current,
+.work__daily-previous,
+.work__monthly-current,
+.work__monthly-previous,
+.play__daily-current,
+.play__daily-previous,
+.play__monthly-current,
+.play__monthly-previous,
+.study__daily-current,
+.study__daily-previous,
+.study__monthly-current,
+.study__monthly-previous,
+.exercise__daily-current,
+.exercise__daily-previous,
+.exercise__monthly-current,
+.exercise__monthly-previous,
+.social__daily-current,
+.social__daily-previous,
+.social__monthly-current,
+.social__monthly-previous,
+.self-care__daily-current,
+.self-care__daily-previous,
+.self-care__monthly-current,
+.self-care__monthly-previous {
+    display: none;
+}
+
 .work {
     /* background-color: var(--orange-300-work); */
     background: var(--navy-900);
@@ -193,55 +319,9 @@ body {
     right: 16px;
 }
 
-.work__group {
-    background-color: var(--navy-900);
-    border-radius: 14px;
-    position: relative;
-    z-index: 1;
-    padding: 28px 22px 24px 27px;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-}
-
-.work__header,
-.work__main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.work__heading {
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.work__icon-more {
-    width: 21px;
-    height: 5px;
-}
-
-.work__weekly-current {
-    font-size: 32px;
-    font-weight: 300;
-    letter-spacing: -0.05em;
-}
-
-.work__weekly-previous {
-    font-size: 16px;
-    color: var(--navy-200);
-    letter-spacing: -0.03em;
-}
-
-.work__daily-current,
-.work__daily-previous,
-.work__monthly-current,
-.work__monthly-previous {
-    display: none;
-}
-
 .play {
-    background-color: var(--blue-300-play);
+    background: var(--navy-900);
+    background: linear-gradient(0deg, var(--navy-900) 69%, var(--blue-300-play) 69%);
 }
 
 .play__image {
@@ -251,7 +331,8 @@ body {
 }
 
 .study {
-    background-color: var(--pink-400-study);
+    background: var(--navy-900);
+    background: linear-gradient(0deg, var(--navy-900) 69%, var(--pink-400-study) 69%);
 }
 
 .study__image {
@@ -261,7 +342,8 @@ body {
 }
 
 .exercise {
-    background-color: var(--green-400-exercise);
+    background: var(--navy-900);
+    background: linear-gradient(0deg, var(--navy-900) 69%, var(--green-400-exercise) 69%);
 }
 
 .exercise__image {
@@ -271,7 +353,8 @@ body {
 }
 
 .social {
-    background-color: var(--purple-700-social);
+    background: var(--navy-900);
+    background: linear-gradient(0deg, var(--navy-900) 69%, var(--purple-700-social) 69%);
 }
 
 .social__image {
@@ -281,7 +364,8 @@ body {
 }
 
 .self-care {
-    background-color: var(--yellow-300-self-care);
+    background: var(--navy-900);
+    background: linear-gradient(0deg, var(--navy-900) 69%, var(--yellow-300-self-care) 69%);
 }
 
 .self-care__image {
