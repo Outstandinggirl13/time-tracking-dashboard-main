@@ -15,66 +15,129 @@
   </style>
 </head>
 <body>
-
-  Report for
-  Jeremy Robson
-
-  Daily
-  Weekly
-  Monthly
-
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main class="main">
+    <section class="report">
+      <header class="report__header">
+        <img class="report__image" src="assets/images/image-jeremy.png" width="234" height="234" alt="Jules Wyvern, report owner.">
+        <div class="report__group">
+          <p class="report__text">Report for</p>
+          <h1 class="report__user">Jeremy Robson</h1>
+        </div>
+      </header>
+      <section class="report__tabs">
+        <button class="report__daily">Daily</button>
+        <button class="report__weekly">Weekly</button>
+        <button class="report__monthly">Monthly</button>
+      </section>
+    </section>
+    <section class="work">
+      <img class="work__image" src="assets/images/icon-work.svg" width="79" height="79" alt="" aria-hidden="true">
+      <div class="work__group">
+        <div class="work__header">
+          <h2 class="work__heading">Work</h2>
+          <img class="work__icon-more" src="assets/images/icon-ellipsis.svg" width="21" height="5" alt="Show more.">
+        </div>
+        <div class="work__main">
+          <p class="work__daily-current">5hrs</p> 
+          <p class="work__daily-previous">Yesterday - 7hrs</p>
+          <p class="work__weekly-current">32hrs</p> 
+          <p class="work__weekly-previous">Last week - 36hrs</p>
+          <p class="work__monthly-current">103hrs</p> 
+          <p class="work__monthly-previous">Last month - 128hrs</p>
+        </div>
+      </div>
+    </section>
+    <section class="play">
+      <img class="play__image" src="assets/images/icon-play.svg" width="76" height="77" alt="" aria-hidden="true">
+      <div class="play__group">
+        <div class="play__header">
+          <h2 class="play__heading">Play</h2>
+          <img class="play__icon-more" src="assets/images/icon-ellipsis.svg" width="21" height="5" alt="Show more.">
+        </div>
+        <div class="play__main">
+          <p class="play__daily-current">1hr</p> 
+          <p class="play__daily-previous">Yesterday - 2hrs</p>
+          <p class="play__weekly-current">10hrs</p> 
+          <p class="play__weekly-previous">Last week - 8hrs</p>
+          <p class="play__monthly-current">23hrs</p> 
+          <p class="play__monthly-previous">Last month - 29hrs</p>
+        </div>
+      </div>
+    </section>
+    <section class="study">
+      <img class="study__image" src="assets/images/icon-study.svg" width="79" height="79" alt="" aria-hidden="true">
+      <div class="study__group">
+        <div class="study__header">
+          <h2 class="study__heading">Study</h2>
+          <img class="study__icon-more" src="assets/images/icon-ellipsis.svg" width="21" height="5" alt="Show more.">
+        </div>
+        <div class="study__main">
+          <p class="study__daily-current">0hrs</p> 
+          <p class="study__daily-previous">Yesterday - 1hr</p>
+          <p class="study__weekly-current">4hrs</p> 
+          <p class="study__weekly-previous">Last week - 7hrs</p>
+          <p class="study__monthly-current">13hrs</p> 
+          <p class="study__monthly-previous">Last month - 19hrs</p>
+        </div>
+      </div>
+    </section>
+    <section class="exercise">
+      <img class="exercise__image" src="assets/images/icon-exercise.svg" width="81" height="55" alt="" aria-hidden="true">
+      <div class="exercise__group">
+        <div class="exercise__header">
+          <h2 class="exercise__heading">Exercise</h2>
+          <img class="exercise__icon-more" src="assets/images/icon-ellipsis.svg"  width="21" height="5" alt="Show more.">
+        </div>
+        <div class="exercise__main">
+          <p class="exercise__daily-current">1hr</p> 
+          <p class="exercise__daily-previous">Yesterday - 1hr</p>
+          <p class="exercise__weekly-current">4hrs</p> 
+          <p class="exercise__weekly-previous">Last week - 5hrs</p>
+          <p class="exercise__monthly-current">11hrs</p> 
+          <p class="exercise__monthly-previous">Last month - 18hrs</p>
+        </div>
+      </div>
+    </section>
+    <section class="social">
+      <img class="social__image" src="assets/images/icon-social.svg" width="75" height="100" alt="" aria-hidden="true">
+      <div class="social__group">
+        <div class="social__header">
+          <h2 class="social__heading">Social</h2>
+          <img class="social__icon-more" src="assets/images/icon-ellipsis.svg" width="21" height="5" alt="Show more.">
+        </div>
+        <div class="social__main">
+          <p class="social__daily-current">1hr</p> 
+          <p class="social__daily-previous">Yesterday - 3hrs</p>
+          <p class="social__weekly-current">5hrs</p> 
+          <p class="social__weekly-previous">Last week - 10hrs</p>
+          <p class="social__monthly-current">21hrs</p> 
+          <p class="social__monthly-previous">Last month - 23hrs</p>
+        </div>
+      </div>
+    </section>
+    <section class="self-care">
+      <img class="self-care__image" src="assets/images/icon-self-care.svg" width="67" height="67" alt="" aria-hidden="true">
+      <div class="self-care__group">
+        <div class="self-care__header">
+          <h2 class="self-care__heading">Self Care</h2>
+          <img class="self-care__icon-more" src="assets/images/icon-ellipsis.svg" width="21" height="5" alt="Show more.">
+        </div>
+        <div class="self-care__main">
+          <p class="self-care__daily-current">0hrs</p> 
+          <p class="self-care__daily-previous">Yesterday - 1hr</p>
+          <p class="self-care__weekly-current">2hrs</p> 
+          <p class="self-care__weekly-previous">Last week - 2hrs</p>
+          <p class="self-care__monthly-current">7hrs</p> 
+          <p class="self-care__monthly-previous">Last month - 11hrs</p>
+        </div>
+      </div>
+    </section>
+  </main> 
+  <footer class="attribution">
+    <p class="footer__attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" class="footer__attribution-link" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/Outstandinggirl13" class="footer__attribution-link">Outstandinggirl13</a>.
+    </p>
+  </footer>
 </body>
 </html>
