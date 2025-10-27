@@ -1,0 +1,121 @@
+/* ===========================
+   FONTS
+   =========================== */
+
+/* rubik-300 - latin */
+@font-face {
+    font-display: swap; 
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    src: url('assets/fonts/rubik-v31-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* rubik-regular - latin */
+  @font-face {
+    font-display: swap; 
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    src: url('assets/fonts/rubik-v31-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* rubik-500 - latin */
+  @font-face {
+    font-display: swap; 
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/assets/fonts/rubik-v31-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+/* ===========================
+   RESET
+   =========================== */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+      
+img,
+picture,
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+      
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    color: inherit;
+    background: none;
+    border-color: transparent;
+}
+      
+a {
+    text-decoration: none;
+    color: inherit;
+}
+      
+ul,
+ol {
+    list-style-type: none;
+}
+      
+/* ===========================
+       CSS VARIABLES
+   =========================== */
+      
+:root {
+      
+    /* Primary */
+
+    --purple-600: hsl(246, 80%, 60%);
+    
+    --orange-300-work: hsl(15, 100%, 70%);
+    --blue-300-play: hsl(195, 74%, 62%);
+    --pink-400-study: hsl(348, 100%, 68%);
+    --green-400-exercise: hsl(145, 58%, 55%);
+    --purple-700-social: hsl(264, 64%, 52%);
+    --yellow-300-self-care: hsl(43, 84%, 65%);
+    
+    /* Neutral */
+    
+    --navy-950: hsl(226, 43%, 10%);
+    --navy-900: hsl(235, 46%, 20%);
+    --purple-500: hsl(235, 45%, 61%);
+    --navy-200: hsl(236, 100%, 87%);
+    
+    /* Typography */
+
+    --font-base: 'Rubik', sans-serif;
+}
+   
+/* ===========================
+      BASE
+   =========================== */
+   
+body {
+    font-family: var(--font-base);
+    color: white;
+    font-size: 18px;
+    background-color: var(--navy-950);
+}
+
+/* ===========================
+   LAYOUT & ELEMENTS
+   =========================== */
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
