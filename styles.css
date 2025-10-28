@@ -175,12 +175,22 @@ body {
 .report__daily,
 .report__weekly,
 .report__monthly {
-    cursor: pointer;
     color: var(--navy-200);
+}
+
+.report__daily:hover,
+.report__weekly:hover,
+.report__monthly:hover {
+    cursor: pointer;
+    color: white;
 }
 
 .report__weekly {
     padding-left: 0.5rem;
+}
+
+.active {
+    color: white;
 }
 
 .work__group,
@@ -428,19 +438,11 @@ body {
     }
     
     .report__tabs {
-        display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
         padding: 1.5rem 1.9375rem 1.875rem;
         gap: 18px;
-    }
-    
-    .report__daily,
-    .report__weekly,
-    .report__monthly {
-        cursor: pointer;
-        color: var(--navy-200);
     }
     
     .report__weekly {

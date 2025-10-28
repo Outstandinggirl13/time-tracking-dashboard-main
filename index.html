@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Time tracking dashboard</title>
-
+  <link rel="preload" href="assets/fonts/rubik-v31-latin-300.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/rubik-v31-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/rubik-v31-latin-500.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
-
 </head>
 <body>
   <main class="main">
@@ -24,7 +23,7 @@
         </header>
         <section class="report__tabs">
           <button class="report__daily">Daily</button>
-          <button class="report__weekly">Weekly</button>
+          <button class="report__weekly active">Weekly</button>
           <button class="report__monthly">Monthly</button>
         </section>
       </section>
@@ -138,5 +137,6 @@
       Coded by <a href="https://github.com/Outstandinggirl13" class="footer__attribution-link">Outstandinggirl13</a>.
     </p>
   </footer>
+  <script src="app.js"></script>
 </body>
 </html>
