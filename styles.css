@@ -111,7 +111,7 @@ body {
    LAYOUT & ELEMENTS
    =========================== */
 
-.main {
+.main__cards {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(7, auto);
@@ -175,6 +175,7 @@ body {
 .report__weekly,
 .report__monthly {
     cursor: pointer;
+    color: var(--navy-200);
 }
 
 .report__weekly {
@@ -191,7 +192,7 @@ body {
     border-radius: 14px;
     position: relative;
     z-index: 1;
-    padding: 26px 22px 28px 27px;
+    padding: 26px 22px 28px 25px;
     display: flex;
     flex-direction: column;
     gap: 6px;
@@ -221,6 +222,7 @@ body {
 .social__heading,
 .self-care__heading {
     font-size: 18px;
+    letter-spacing: -0.0em;
     font-weight: 500;
 }
 
@@ -254,7 +256,7 @@ body {
 .self-care__monthly-current {
     font-size: 32px;
     font-weight: 300;
-    letter-spacing: -0.05em;
+    letter-spacing: -0.02em;
 }
 
 .work__daily-previous,
@@ -277,7 +279,7 @@ body {
 .self-care__monthly-previous {
     font-size: 16px;
     color: var(--navy-200);
-    letter-spacing: -0.03em;
+    font-weight: 300;
 }
 
 .work__daily-current,
@@ -375,10 +377,255 @@ body {
 }
 
 .footer__attribution { 
-    font-size: 11px; 
+    font-size: 18px; 
     text-align: center; 
+    padding: 16px;
 }
 
 .footer__attribution-link { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 600px) {
+    .main__cards {
+        grid-template-columns: 255px 255px;
+        grid-template-rows: repeat(4, auto);
+        gap: 30px;
+        margin: 81px auto;
+        max-width: fit-content;
+    }
+
+    .report {
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+    }
+    
+    .report__header {
+        padding: 36px 31px 78px;
+        flex-direction: column;
+        gap: 43px;
+        align-items: flex-start;
+    }
+    
+    .report__image {
+        max-width: 78px;
+        max-height: 78px;
+    }
+    
+    .report__text {
+        font-size: 16px;
+        margin-bottom: 3px;
+    }
+    
+    .report__user {
+        font-size: 40px;
+        line-height: 47px;
+        font-weight: 300;
+    }
+    
+    .report__tabs {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 24px 31px 30px;
+        gap: 18px;
+    }
+    
+    .report__daily,
+    .report__weekly,
+    .report__monthly {
+        cursor: pointer;
+        color: var(--navy-200);
+    }
+    
+    .report__weekly {
+        padding-left: 0px;
+    }
+
+    .work,
+    .play,
+    .study,
+    .exercise,
+    .social,
+    .self-care {
+        padding-top: 40px;
+    }
+
+    .work__group,
+    .play__group,
+    .study__group,
+    .exercise__group,
+    .social__group,
+    .self-care__group {
+        padding: 30px 30px 31px;
+        flex-direction: column;
+        gap: 23px;
+    }
+
+    .work__main,
+    .play__main,
+    .study__main,
+    .exercise__main,
+    .social__main,
+    .self-care__main {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .work__daily-current,
+    .work__weekly-current,
+    .work__monthly-current
+    .play__daily-current,
+    .play__weekly-current,
+    .play__monthly-current,
+    .study__daily-current,
+    .study__weekly-current,
+    .study__monthly-current,
+    .exercise__daily-current,
+    .exercise__weekly-current,
+    .exercise__monthly-current,
+    .social__daily-current,
+    .social__weekly-current,
+    .social__monthly-current,
+    .self-care__daily-current,
+    .self-care__weekly-current,
+    .self-care__monthly-current {
+        font-size: 58px;
+        line-height: 69px;
+    }
+
+    .work__daily-previous,
+    .work__weekly-previous,
+    .work__monthly-previous,
+    .play__daily-previous,
+    .play__weekly-previous,
+    .play__monthly-previous,
+    .study__daily-previous,
+    .study__weekly-previous,
+    .study__monthly-previous,
+    .exercise__daily-previous,
+    .exercise__weekly-previous,
+    .exercise__monthly-previous,
+    .social__daily-previous,
+    .social__weekly-previous,
+    .social__monthly-previous,
+    .self-care__daily-previous,
+    .self-care__weekly-previous,
+    .self-care__monthly-previous {
+        font-size: 16px;
+    }
+
+    .work__daily-current,
+    .work__daily-previous,
+    .work__monthly-current,
+    .work__monthly-previous,
+    .play__daily-current,
+    .play__daily-previous,
+    .play__monthly-current,
+    .play__monthly-previous,
+    .study__daily-current,
+    .study__daily-previous,
+    .study__monthly-current,
+    .study__monthly-previous,
+    .exercise__daily-current,
+    .exercise__daily-previous,
+    .exercise__monthly-current,
+    .exercise__monthly-previous,
+    .social__daily-current,
+    .social__daily-previous,
+    .social__monthly-current,
+    .social__monthly-previous,
+    .self-care__daily-current,
+    .self-care__daily-previous,
+    .self-care__monthly-current,
+    .self-care__monthly-previous {
+        display: none;
+    }
+
+    .work {
+        background: linear-gradient(0deg, var(--navy-900) 78%, var(--orange-300-work) 78%);
+    }
+
+    .work__image {
+        top: -11px;
+    }
+
+    .play {
+        background: linear-gradient(0deg, var(--navy-900) 78%, var(--blue-300-play) 78%);
+    }
+
+    .play__image {
+        top: -6px;
+    }
+
+    .study {
+        background: linear-gradient(0deg, var(--navy-900) 78%, var(--pink-400-study) 78%);
+    }
+
+    .study__image {
+        top: -8px;
+    }
+
+    .exercise {
+        background: linear-gradient(0deg, var(--navy-900) 78%, var(--green-400-exercise) 78%);
+    }
+
+    .exercise__image {
+        right: 16px;
+    }
+
+    .social {
+        background: linear-gradient(0deg, var(--navy-900) 78%, var(--purple-700-social) 78%);
+    }
+
+    .social__image {
+        top: -16px;
+        right: 14px;
+    }
+
+    .self-care {
+        background: linear-gradient(0deg, var(--navy-900) 78%, var(--yellow-300-self-care) 78%);
+    }
+
+    .self-care__image {
+        top: -14px;
+        right: 15px;
+    }
+
+    .footer__attribution { 
+        font-size: 18px; 
+        text-align: center; 
+        padding: 16px;
+    }
+
+    .footer__attribution-link { 
+        color: hsl(228, 45%, 44%); 
+    }
+}
+
+@media (min-width: 1200px) {
+    .main {
+        height: 100vh;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+    }
+
+    .main__cards {
+        grid-template-columns: repeat(4, 255px);
+        grid-template-rows: repeat(4, auto);
+        gap: 30px;
+        margin: 0px auto;
+        max-width: fit-content;
+    }
+
+    .footer__attribution { 
+        font-size: 18px; 
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
 }
