@@ -79,3 +79,107 @@ function showPeriod(periodObj, event) {
 reportDaily.addEventListener("click", e => showPeriod(daily, e));
 reportWeekly.addEventListener("click", e => showPeriod(weekly, e));
 reportMonthly.addEventListener("click", e => showPeriod(monthly, e));
+
+fetch("data.json")
+  .then(response => response.json())
+  .then(data => {
+        // Find the object with title "Work"
+        const workData = data.find(item => item.title === "Work");
+        const playData = data.find(item => item.title === "Play");
+        const studyData = data.find(item => item.title === "Study");
+        const exerciseData = data.find(item => item.title === "Exercise");
+        const socialData = data.find(item => item.title === "Social");
+        const selfCareData = data.find(item => item.title === "Self Care");
+
+
+        // Access the "daily" timeframe
+        const workDailyHours = workData.timeframes.daily.current;
+        const playDailyHours = playData.timeframes.daily.current;
+        const studyDailyHours = studyData.timeframes.daily.current;
+        const exerciseDailyHours = exerciseData.timeframes.daily.current;
+        const socialDailyHours = socialData.timeframes.daily.current;
+        const selfCareDailyHours = selfCareData.timeframes.daily.current;
+
+        const workDailyHoursPrev = workData.timeframes.daily.previous;
+        const playDailyHoursPrev = playData.timeframes.daily.previous;
+        const studyDailyHoursPrev = studyData.timeframes.daily.previous;
+        const exerciseDailyHoursPrev = exerciseData.timeframes.daily.previous;
+        const socialDailyHoursPrev = socialData.timeframes.daily.previous;
+        const selfCareDailyHoursPrev = selfCareData.timeframes.daily.previous;
+    
+        // Replace text content in the HTML element
+        if(workDailyHours === 1) {
+            daily["workCurrent"].textContent = `${workDailyHours}hr`;  // replace text content
+        } else {
+            daily["workCurrent"].textContent = `${workDailyHours}hrs`;  // replace text content
+        }
+
+        if(playDailyHours === 1) {
+            daily["playCurrent"].textContent = `${playDailyHours}hr`;  // replace text content
+        } else {
+            daily["playCurrent"].textContent = `${playDailyHours}hrs`;  // replace text content
+        }
+
+        if(studyDailyHours === 1) {
+            daily["studyCurrent"].textContent = `${studyDailyHours}hr`;  // replace text content
+        } else {
+            daily["studyCurrent"].textContent = `${studyDailyHours}hrs`;  // replace text content
+        }
+
+        if(exerciseDailyHours === 1) {
+            daily["exerciseCurrent"].textContent = `${exerciseDailyHours}hr`;  // replace text content
+        } else {
+            daily["exerciseCurrent"].textContent = `${exerciseDailyHours}hrs`;  // replace text content
+        }
+
+        if(socialDailyHours === 1) {
+            daily["socialCurrent"].textContent = `${socialDailyHours}hr`;  // replace text content
+        } else {
+            daily["socialCurrent"].textContent = `${socialDailyHours}hrs`;  // replace text content
+        }
+
+        if(selfCareDailyHours === 1) {
+            daily["selfCareCurrent"].textContent = `${selfCareDailyHours}hr`;  // replace text content
+        } else {
+            daily["selfCareCurrent"].textContent = `${selfCareDailyHours}hrs`;  // replace text content
+        }
+
+
+
+        if(workDailyHoursPrev === 1) {
+            daily["workPrevious"].textContent = `Yesterday - ${workDailyHoursPrev}hr`;  // replace text content
+        } else {
+            daily["workPrevious"].textContent = `Yesterday - ${workDailyHoursPrev}hrs`;  // replace text content
+        }
+
+        if(playDailyHoursPrev === 1) {
+            daily["playPrevious"].textContent = `Yesterday - ${playDailyHoursPrev}hr`;  // replace text content
+        } else {
+            daily["playPrevious"].textContent = `Yesterday - ${playDailyHoursPrev}hrs`;  // replace text content
+        }
+
+        if(studyDailyHoursPrev === 1) {
+            daily["studyPrevious"].textContent = `Yesterday - ${studyDailyHoursPrev}hr`;  // replace text content
+        } else {
+            daily["studyPrevious"].textContent = `Yesterday - ${studyDailyHoursPrev}hrs`;  // replace text content
+        }
+
+        if(exerciseDailyHoursPrev === 1) {
+            daily["exercisePrevious"].textContent = `Yesterday - ${exerciseDailyHoursPrev}hr`;  // replace text content
+        } else {
+            daily["exercisePrevious"].textContent = `Yesterday - ${exerciseDailyHoursPrev}hrs`;  // replace text content
+        }
+
+        if(socialDailyHoursPrev === 1) {
+            daily["socialPrevious"].textContent = `Yesterday - ${socialDailyHoursPrev}hr`;  // replace text content
+        } else {
+            daily["socialPrevious"].textContent = `Yesterday - ${socialDailyHoursPrev}hrs`;  // replace text content
+        }
+
+        if(selfCareDailyHoursPrev === 1) {
+            daily["selfCarePrevious"].textContent = `Yesterday - ${selfCareDailyHoursPrev}hr`;  // replace text content
+        } else {
+            daily["selfCarePrevious"].textContent = `Yesterday - ${selfCareDailyHoursPrev}hrs`;  // replace text content
+        }
+  })
+  .catch(error => console.error("Error loading JSON:", error));
