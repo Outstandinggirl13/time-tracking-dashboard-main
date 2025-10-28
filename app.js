@@ -64,58 +64,44 @@ const monthly = {
 
 let currentTab = document.querySelector(".report__weekly");
 
-function makeVisible(element) {
-    element.style.display = "block";
-}
-
-function makeInvisible(element) {
-    element.style.display = "none";
-}
-
-function assignClass(element) {
+function assignClass(event) {
     currentTab.classList.remove("active");
-    let newCurrent = element.currentTarget.classList[0];
+    let newCurrent = event.currentTarget.classList[0];
     currentTab = document.querySelector("." + newCurrent);
     currentTab.classList.add("active");
 }
 
+function makeVisible(obj) {
+    Object.keys(obj).forEach(key => {
+        obj[key].style.display = "block";
+    });
+}
+
+function makeInvisible(obj) {
+    Object.keys(obj).forEach(key => {
+        obj[key].style.display = "none";
+    });
+}
+
 function showDaily(event) {
     assignClass(event);
-    Object.keys(daily).forEach(key => {
-        makeVisible(daily[key]);
-    });
-    Object.keys(weekly).forEach(key => {
-        makeInvisible(weekly[key]);
-    });
-    Object.keys(monthly).forEach(key => {
-        makeInvisible(monthly[key]);
-    });
+    makeVisible(daily);
+    makeInvisible(weekly);
+    makeInvisible(monthly);
 }
 
 function showWeekly(event) {
     assignClass(event);
-    Object.keys(daily).forEach(key => {
-        makeInvisible(daily[key]);
-    });
-    Object.keys(weekly).forEach(key => {
-        makeVisible(weekly[key]);
-    });
-    Object.keys(monthly).forEach(key => {
-        makeInvisible(monthly[key]);
-    });
+    makeInvisible(daily);
+    makeVisible(weekly);
+    makeInvisible(monthly);
 }
 
 function showMonthly(event) {
     assignClass(event);
-    Object.keys(daily).forEach(key => {
-        makeInvisible(daily[key]);
-    });
-    Object.keys(weekly).forEach(key => {
-        makeInvisible(weekly[key]);
-    });
-    Object.keys(monthly).forEach(key => {
-        makeVisible(monthly[key]);
-    });
+    makeInvisible(daily);
+    makeInvisible(weekly);
+    makeVisible(monthly);
 }
 
 reportDaily.addEventListener("click", showDaily);
