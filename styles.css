@@ -88,6 +88,7 @@ ol {
     
     --navy-950: hsl(226, 43%, 10%);
     --navy-900: hsl(236, 45%, 20%);
+    --navy-700: hsl(236, 41%, 34%);
     --purple-500: hsl(235, 45%, 61%);
     --navy-200: hsl(236, 100%, 87%);
     
@@ -209,6 +210,16 @@ body {
     gap: 0.375rem;
 }
 
+.work__group:hover,
+.play__group:hover,
+.study__group:hover,
+.exercise__group:hover,
+.social__group:hover,
+.self-care__group:hover {
+    background-color: var(--navy-700);
+    cursor: pointer;
+}
+
 .work__header,
 .work__main,
 .play__header,
@@ -245,6 +256,15 @@ body {
 .self-care__icon-more {
     width: 1.3125rem;
     height: 0.3125rem;
+}
+
+.work__icon-more:hover path,
+.play__icon-more:hover path,
+.study__icon-more:hover path,
+.exercise__icon-more:hover path,
+.social__icon-more:hover path,
+.self-care__icon-more:hover path{
+    fill: white;
 }
 
 .work__daily-current,
