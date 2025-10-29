@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Responsive Time-Tracking Dashboard Challenge](https://www.frontendmentor.io/solutions/responsive-time-tracking-dashboard-challenge-rLN1a_8pCb)
 - Live Site URL: [GitHub Pages](https://outstandinggirl13.github.io/time-tracking-dashboard-main/)
 
 ## My process
