@@ -321,7 +321,7 @@ body {
 }
 
 .work {
-    background: var(--navy-900);
+    background: var(--orange-300-work);
     background: linear-gradient(0deg, var(--navy-900) 69%, var(--orange-300-work) 69%);
 }
 
@@ -332,7 +332,7 @@ body {
 }
 
 .play {
-    background: var(--navy-900);
+    background: var(--blue-300-play);
     background: linear-gradient(0deg, var(--navy-900) 69%, var(--blue-300-play) 69%);
 }
 
@@ -343,7 +343,7 @@ body {
 }
 
 .study {
-    background: var(--navy-900);
+    background: var(--pink-400-study);
     background: linear-gradient(0deg, var(--navy-900) 69%, var(--pink-400-study) 69%);
 }
 
@@ -354,7 +354,7 @@ body {
 }
 
 .exercise {
-    background: var(--navy-900);
+    background: var(--green-400-exercise);
     background: linear-gradient(0deg, var(--navy-900) 69%, var(--green-400-exercise) 69%);
 }
 
@@ -365,7 +365,7 @@ body {
 }
 
 .social {
-    background: var(--navy-900);
+    background: var(--purple-700-social);
     background: linear-gradient(0deg, var(--navy-900) 69%, var(--purple-700-social) 69%);
 }
 
@@ -376,7 +376,7 @@ body {
 }
 
 .self-care {
-    background: var(--navy-900);
+    background: var(--yellow-300-self-care);
     background: linear-gradient(0deg, var(--navy-900) 69%, var(--yellow-300-self-care) 69%);
 }
 
